@@ -5,16 +5,16 @@
         "en-US": {
           "summary": "Sample Short Description",
           "examplePhrases": [
-            "Alexa open template default",
-            "Alexa tell template default I am Jeff",
-            "Alexa tell template default my name is Peter"
+            "Alexa open hello world template",
+            "Alexa tell hello world template I am Jeff",
+            "Alexa tell hello world template my name is Peter"
           ],
           "keywords": [
             "keyword1",
             "keyword2",
             "keyword3"
           ],
-          "name": "Template Default",
+          "name": "Hello World Template",
           "description": "Sample Full Description",
           "smallIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
           "largeIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"
