@@ -1,47 +1,47 @@
 {
-    "interactionModel":{
-        "languageModel":{
-            "invocationName":"hello world template",
-            "types":[],
-            "intents":[
+    "interactionModel": {
+      "languageModel": {
+        "invocationName": "basic starter",
+        "types": [
+  
+        ],
+        "intents": [
+          {
+            "name": "AMAZON.CancelIntent",
+            "samples": [
+  
+            ]
+          },
+          {
+            "name": "AMAZON.HelpIntent",
+            "samples": [
+  
+            ]
+          },
+          {
+            "name": "AMAZON.StopIntent",
+            "samples": [
+  
+            ]
+          },
+          {
+            "name":"MyNameIsIntent",
+            "slots":[
                 {
-                  "name": "AMAZON.CancelIntent",
-                  "samples": []
-                },
-                {
-                  "name": "AMAZON.HelpIntent",
-                  "samples": []
-                },
-                {
-                  "name": "AMAZON.StopIntent",
-                  "samples": []
-                },
-                {
-                    "name":"HelloWorldIntent",
-                    "slots":[
-
-                    ],
-                    "samples":[
-                        "hello",
-                        "say hello",
-                        "say hello world"
-                    ]
-                },
-                {
-                    "name":"MyNameIsIntent",
-                    "slots":[
-                        {
-                            "name":"name",
-                            "type":"AMAZON.US_FIRST_NAME"
-                        }
-                    ],
-                    "samples":[
-                        "my name is {name}",
-                        "i am {name}",
-                        "you can call me {name}"
-                    ]
+                    "name":"name",
+                    "type":"AMAZON.US_FIRST_NAME"
                 }
+            ],
+            "samples":[
+                "{name}",
+                "{name} is my name",
+                "my name is {name}",
+                "i am {name}",
+                "you can call me {name}"
             ]
         }
+        ]
+      }
     }
-}
+  }
+  
