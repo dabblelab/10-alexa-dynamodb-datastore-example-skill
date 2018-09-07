@@ -99,7 +99,7 @@
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "Please say movie name to add "
+                        "value": "Which movie would you like to add "
                     }
                 ]
             },
@@ -108,7 +108,7 @@
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "Please say movie name to remove "
+                        "value": "Which movie would you like to remove "
                     }
                 ]
             }
