@@ -1,3 +1,4 @@
 _tmp/
 config.js
 gitsetup.sh
+.DS_Store

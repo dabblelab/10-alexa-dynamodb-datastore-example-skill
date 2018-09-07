@@ -1,47 +1,117 @@
 {
     "interactionModel": {
-      "languageModel": {
-        "invocationName": "basic starter",
-        "types": [
-  
-        ],
-        "intents": [
-          {
-            "name": "AMAZON.CancelIntent",
-            "samples": [
-  
-            ]
-          },
-          {
-            "name": "AMAZON.HelpIntent",
-            "samples": [
-  
-            ]
-          },
-          {
-            "name": "AMAZON.StopIntent",
-            "samples": [
-  
-            ]
-          },
-          {
-            "name":"MyNameIsIntent",
-            "slots":[
+        "languageModel": {
+            "invocationName": "dynamodb starter",
+            "intents": [
                 {
-                    "name":"name",
-                    "type":"AMAZON.US_FIRST_NAME"
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddMovieIntent",
+                    "slots": [
+                        {
+                            "name": "MovieName",
+                            "type": "AMAZON.Movie",
+                            "samples": [
+                                "{MovieName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "add {MovieName}",
+                        "add"
+                    ]
+                },
+                {
+                    "name": "GetMoviesIntent",
+                    "slots": [],
+                    "samples": [
+                        "get my movies"
+                    ]
+                },
+                {
+                    "name": "RemoveMovieIntent",
+                    "slots": [
+                        {
+                            "name": "MovieName",
+                            "type": "AMAZON.Movie",
+                            "samples": [
+                                "{MovieName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "remove {MovieName}",
+                        "remove"
+                    ]
                 }
             ],
-            "samples":[
-                "{name}",
-                "{name} is my name",
-                "my name is {name}",
-                "i am {name}",
-                "you can call me {name}"
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AddMovieIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "MovieName",
+                            "type": "AMAZON.Movie",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.932310416052.1004645578092"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RemoveMovieIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "MovieName",
+                            "type": "AMAZON.Movie",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1034415917954.788060345760"
+                            }
+                        }
+                    ]
+                }
             ]
-        }
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.932310416052.1004645578092",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say movie name to add "
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1034415917954.788060345760",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say movie name to remove "
+                    }
+                ]
+            }
         ]
-      }
     }
-  }
-  
+}

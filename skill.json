@@ -5,16 +5,14 @@
         "en-US": {
           "summary": "Sample Short Description",
           "examplePhrases": [
-            "Alexa open hello world template",
-            "Alexa tell hello world template I am Jeff",
-            "Alexa tell hello world template my name is Peter"
+            "Alexa open dynamodb starter"
           ],
           "keywords": [
             "keyword1",
             "keyword2",
             "keyword3"
           ],
-          "name": "basic-starter",
+          "name": "dynamodb-starter",
           "description": "Sample Full Description",
           "smallIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
           "largeIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"
