@@ -1,4 +1,5 @@
 _tmp/
+.ask/config
 config.js
 gitsetup.sh
 .DS_Store
