@@ -9,6 +9,7 @@
   "author": "Dabble Lab",
   "license": "ISC",
   "dependencies": {
-    "ask-sdk": "^2.0.10"
+    "ask-sdk": "^2.0.10",
+    "aws-sdk": "^2.324.0"
   }
 }
