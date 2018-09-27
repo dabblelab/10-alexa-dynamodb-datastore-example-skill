@@ -47,7 +47,7 @@ const AddMovieIntentHandler = {
     const movieName = slots.MovieName.value;
     return dbHelper.addMovie(movieName, userID)
       .then((data) => {
-        const speechText = `You have added movie ${movieName}.You can say add to add another one or remove to remove movie`;
+        const speechText = `You have added movie ${movieName}. You can say add to add another one or remove to remove movie`;
         return responseBuilder
           .speak(speechText)
           .reprompt(GENERAL_REPROMPT)
