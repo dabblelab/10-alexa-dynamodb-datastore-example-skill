@@ -75,7 +75,7 @@ const GetMoviesIntentHandler = {
       .then((data) => {
         var speechText = "Your movies are "
         if (data.length == 0) {
-          speechText = "You do not have any favourite movie yet, add movie by saving add moviename "
+          speechText = "You do not have any favourite movies yet, add a movie by saying add movie name "
         } else {
           speechText += data.map(e => e.movieTitle).join(", ")
         }
