@@ -1,0 +1,14 @@
+{
+  "name": "dynamodb-starter",
+  "version": "1.0.0",
+  "description": "DynamoDB Starter Alexa Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dabble Lab",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk": "^2.0.10"
+  }
+}

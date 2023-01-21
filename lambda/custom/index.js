@@ -12,7 +12,7 @@ const LaunchRequestHandler = {
   handle(handlerInput) {
     const speechText = 'Hello there. What is your favourite movie? You can say add moviename to add your favourite movie or say list my movies to get your favourite movies.';
     const repromptText = 'What would you like to do? You can say HELP to get available options';
-
+    console.log("Hello")
     return handlerInput.responseBuilder
       .speak(speechText)
       .reprompt(repromptText)
